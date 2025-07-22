@@ -1,0 +1,132 @@
+:root{
+    --firstColor: #ff305b;
+}
+
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    padding: 5px 0;
+    background-color: #333;
+}
+
+nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .container .part1{
+    width: 5%;
+}
+nav .container .part1 img{
+    width: 100%;
+}
+
+nav .container .part2 ul{
+    display: flex;
+    list-style: none;
+}
+nav .container .part2 ul li{
+    margin: 0 10px;
+}
+nav .container .part2 ul li a{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    transition-duration: .5s;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+nav .container .part2 ul li.active a{
+    color: var(--firstColor);
+}
+nav .container .part2 ul li a::after{
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: var(--firstColor);
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transition-duration: .5s;
+}
+nav .container .part2 ul li a:hover{
+    color: var(--firstColor);
+}
+nav .container .part2 ul li a:hover::after,
+nav .container .part2 ul li.active a::after{
+    width: 100%;
+    left: 0;
+}
+
+
+header{
+    background-image: url(../Images/slider-01.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+header::before{
+    content: "";
+    background-color: #050505b3;
+    width: 100%;
+    height: 100vh;
+}
+
+header .content{
+    position: absolute;
+    text-align: center;
+}
+header .content h4{
+    font-size: 30px;
+    font-weight: 400;
+}
+header .content h1{
+    color: var(--firstColor);
+    font-size: 80px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    margin: 10px 0;
+}
+header .content p{
+    font-size: 20px;
+}
+header .content p::after{
+    content: 'Designer |';
+    font-size: 20px;
+    animation: textAnimate 2s linear infinite alternate;
+}
+
+header a{
+    position: absolute;
+    width: 30px;
+    height: 60px;
+    border: 2px solid var(--firstColor);
+    border-radius: 20px;
+    bottom: 10%;
+    overflow: hidden;
+}
+header a::after{
+    content: "";
+    position: absolute;
+    background-color: var(--firstColor);
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    left: 50%;
+    top: -20%;
+    transform: translate(-50%,-50%);
+    animation: buttonAnimate 1.7s linear infinite normal;
+}
+

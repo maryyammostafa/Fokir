@@ -1,0 +1,46 @@
+@media (max-width: 1300px) {
+    header .content h4{
+        font-size: 25px;
+    }
+    header .content h1{
+        font-size: 40px;
+    }
+    header .content p{
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 371px) and (max-width: 1300px) {
+    header .content h4{
+        font-size: 30px;
+    }
+    header .content h1{
+        font-size: 60px;
+    }
+    header .content p{
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 1300px) {
+    header .content h4{
+        font-size: 35px;
+    }
+    header .content h1{
+        font-size: 70px;
+    }
+    header .content p{
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1300px) {
+    
+}
+
+@media (min-width: 993px) and (max-width: 1300px) {
+}
+
+@media (min-width: 1181px) and (max-width: 1300px) {
+
+}
