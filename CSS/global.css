@@ -8,6 +8,7 @@ body {
     font-family: "Roboto", sans-serif;
     background-color: #151515;
     color: #fff;
+    scroll-behavior: smooth;
 }
 
 h1,

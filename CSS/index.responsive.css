@@ -1,4 +1,18 @@
 @media (max-width: 1300px) {
+    .container{
+        width: 90%;
+    }
+
+    nav .container .part1{
+        width: 20%;
+    }
+    nav .container .part2 ul{
+        display: none;
+    }
+    nav .navButton{
+        display: flex;
+    }
+
     header .content h4{
         font-size: 25px;
     }
@@ -11,6 +25,16 @@
 }
 
 @media (min-width: 371px) and (max-width: 1300px) {
+    nav .container .part1{
+        width: 15%;
+    }
+    nav .container .part2 ul{
+        display: none;
+    }
+    nav .navButton{
+        display: flex;
+    }
+
     header .content h4{
         font-size: 30px;
     }
@@ -23,6 +47,16 @@
 }
 
 @media (min-width: 577px) and (max-width: 1300px) {
+    nav .container .part1{
+        width: 12%;
+    }
+    nav .container .part2 ul{
+        display: none;
+    }
+    nav .navButton{
+        display: flex;
+    }
+
     header .content h4{
         font-size: 35px;
     }
@@ -35,12 +69,34 @@
 }
 
 @media (min-width: 769px) and (max-width: 1300px) {
-    
+    nav .container .part1{
+        width: 10%;
+    }
+    nav .container .part2 ul{
+        display: none;
+    }
+    nav .navButton{
+        display: flex;
+    }
 }
 
 @media (min-width: 993px) and (max-width: 1300px) {
+    nav .container .part1{
+        width: 8%;
+    }
+    nav .container .part2 ul{
+        display: none;
+    }
+    nav .navButton{
+        display: flex;
+    }
 }
 
 @media (min-width: 1181px) and (max-width: 1300px) {
-
+    nav .container .part2 ul{
+        display: none;
+    }
+    nav .navButton{
+        display: flex;
+    }
 }
