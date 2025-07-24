@@ -22,6 +22,50 @@
     header .content p{
         font-size: 15px;
     }
+
+    section{
+        padding: 40px 0;
+    }
+
+    #About .container .part{
+    flex-basis: 100%;
+    }
+    #About .container .part1{
+        margin-bottom: 55px;
+    }
+    #About .container .part1 .frame{
+        width: 280px;
+        
+    }
+    #About .container .part2 .info .col{
+        flex-basis: 100%;
+    }
+    #About .container .part2 .buttons button{
+        padding: 10px 15px;
+    }
+
+    .title{
+        margin-bottom: 26px;
+    }
+    .title h2{
+        font-size: 30px;
+    }
+    .title .lines::before,
+    .title .lines span,
+    .title .lines::after{
+        width: 70px;
+    }
+    .title .lines span{
+        width: 140px;
+    }
+
+    #Services .container .row .card{
+    flex-basis: 95%;
+    margin: auto;
+    }
+    #Services .container .row .card .item{
+        margin-bottom: 26px;
+    }
 }
 
 @media (min-width: 371px) and (max-width: 1300px) {
@@ -43,6 +87,14 @@
     }
     header .content p{
         font-size: 18px;
+    }
+
+    #About .container .part2 .buttons button{
+        padding: 15px 20px;
+    }
+
+    #Services .container .row .card{
+    flex-basis: 80%;
     }
 }
 
@@ -66,6 +118,30 @@
     header .content p{
         font-size: 20px;
     }
+
+    #About .container .part2 .info .col{
+        flex-basis: 50%;
+    }
+
+    .title h2{
+        font-size: 40px;
+    }
+    .title .lines::before,
+    .title .lines span,
+    .title .lines::after{
+        width: 85px;
+    }
+    .title .lines span{
+        width: 160px;
+    }
+
+    #Services .container .row .card{
+    flex-basis: 50%;
+    }
+    #Services .container .row .card .item{
+        margin-inline: 7px;
+        margin-bottom: 20px;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1300px) {
@@ -77,6 +153,16 @@
     }
     nav .navButton{
         display: flex;
+    }
+
+    #About .container .part2{
+        flex-basis: 93%;
+        margin: auto;
+    }
+
+    #Services .container .row .card .item{
+        margin-inline: 40px;
+        margin-bottom: 25px;
     }
 }
 
@@ -90,13 +176,37 @@
     nav .navButton{
         display: flex;
     }
+
+    section{
+        padding-top: 50px ;
+    }
+
+    #About .container .part{
+        flex-basis: 50%;
+    }
+    #About .container .part1{
+        margin-bottom: 0px;
+    }
+    #About .container .part2 .info .col{
+        flex-basis: 50%;
+    }
+
+    #Services .container .row .card{
+    flex-basis: 25%;
+    }
+    #Services .container .row .card .item{
+        margin: 10px;
+    }
 }
 
 @media (min-width: 1181px) and (max-width: 1300px) {
+    nav .container .part1{
+        width: 5%;
+    }
     nav .container .part2 ul{
-        display: none;
+        display: flex;
     }
     nav .navButton{
-        display: flex;
+        display: none;
     }
 }
