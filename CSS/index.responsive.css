@@ -316,4 +316,8 @@
     #Contact .container form .row button{
         width: initial;
     }
+
+    #Blog .container .row .card .item{
+        margin: 0 20px;
+    }
 }

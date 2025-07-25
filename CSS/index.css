@@ -405,7 +405,7 @@ header a::after{
 #Blog .container .row .card .item{
     border: 2px solid var(--firstColor);
     border-radius: 10px;
-    margin: 0 15px;
+    margin: 0 25px;
 }
 #Blog .container .row .card .item .head img{
     width: 100%;
@@ -518,4 +518,6 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
-
+footer p{
+    color: #fff;
+}
