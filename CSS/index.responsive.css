@@ -66,6 +66,37 @@
     #Services .container .row .card .item{
         margin-bottom: 26px;
     }
+
+    #Portfolio .container .row .card{
+        flex-basis: 95%;
+        margin: auto;
+    }
+
+    #Blog .container .row .card{
+        flex-basis: 96%;
+        margin: auto;
+    }
+    #Blog .container .row .card .item{
+        margin-block: 15px;
+    }
+
+    #Contact .container form .row{
+        width: 90%;
+    }
+    #Contact .container form .row .card:nth-of-type(1),
+    #Contact .container form .row .card:nth-of-type(2){
+        flex-basis: 100% ;
+    }
+    #Contact .container form .row .card:nth-of-type(1) .item{
+        margin-right: 0px;
+    }
+    #Contact .container form .row button{
+        width: 100%;
+    }
+
+    footer p{
+        font-size: 12px;
+    }
 }
 
 @media (min-width: 371px) and (max-width: 1300px) {
@@ -95,6 +126,22 @@
 
     #Services .container .row .card{
     flex-basis: 80%;
+    }
+
+    #Portfolio .container .row .card{
+        flex-basis: 85%;
+    }
+
+    #Blog .container .row .card{
+        flex-basis: 85%;
+    }
+
+    #Contact .container form .row{
+        width: 80%;
+    }
+
+    footer p{
+        font-size: 14px;
     }
 }
 
@@ -142,6 +189,22 @@
         margin-inline: 7px;
         margin-bottom: 20px;
     }
+
+    #Portfolio .container .row .card{
+        flex-basis: 50%;
+    }
+
+    #Blog .container .row .card{
+        flex-basis: 50%;
+    }
+
+    #Contact .container form .row{
+        width: 60%;
+    }
+
+    footer p{
+        font-size: 15px;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1300px) {
@@ -163,6 +226,29 @@
     #Services .container .row .card .item{
         margin-inline: 40px;
         margin-bottom: 25px;
+    }
+
+    #Portfolio .container .row .card .item{
+        margin-inline: 40px;
+    }
+
+    #Blog .container .row .card .item{
+        margin-inline: 40px;
+    }
+
+    #Contact .container form .row{
+        width: 70%;
+    }
+    #Contact .container form .row .card:nth-of-type(1),
+    #Contact .container form .row .card:nth-of-type(2){
+        flex-basis: 50% ;
+    }
+    #Contact .container form .row .card:nth-of-type(1) .item{
+        margin-right: 10px;
+    }
+
+    footer p{
+        font-size: 16px;
     }
 }
 
@@ -197,6 +283,20 @@
     #Services .container .row .card .item{
         margin: 10px;
     }
+
+    #Portfolio .container .row .card{
+        flex-basis: calc(100%/3);
+    }
+    #Portfolio .container .row .card .item{
+        margin-inline: 17px;
+    }
+
+    #Blog .container .row .card{
+        flex-basis: calc(100%/3);
+    }
+    #Blog .container .row .card .item{
+        margin-inline: 17px;
+    }
 }
 
 @media (min-width: 1181px) and (max-width: 1300px) {
@@ -208,5 +308,12 @@
     }
     nav .navButton{
         display: none;
+    }
+
+    #Contact .container form .row{
+        width: 60%;
+    }
+    #Contact .container form .row button{
+        width: initial;
     }
 }

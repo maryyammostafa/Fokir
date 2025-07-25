@@ -1,6 +1,5 @@
 :root{
     --firstColor: #ff305b;
-    --secondColor: #c1c1c1;
 }
 
 /* -------NAVBAR------- */
@@ -322,5 +321,201 @@ header a::after{
 #Services .container .row .card .item:hover{
     box-shadow: rgba(255, 48, 91, 0.4) 0px 5px, rgba(255, 48, 91, 0.3) 0px 10px, rgba(255, 48, 91, 0.2) 0px 15px, rgba(255, 48, 91, 0.1) 0px 20px, rgba(255, 48, 91, 0.05) 0px 25px,rgba(100, 0, 0, 0.4) -5px 5px 40px;
     transform: translateY(-10%);
+}
+
+/* -------PORTFOLIO SECTION------- */
+
+#Portfolio .container .row{
+    display: flex;
+    flex-wrap: wrap;
+}
+#Portfolio .container .row .card{
+    flex-basis: calc(100%/3);
+}
+#Portfolio .container .row .card .item{
+    margin: 15px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+#Portfolio .container .row .card .item img{
+    border-radius: 10px;
+    position: relative;
+    display: block;
+    height: 100%;
+}
+#Portfolio .container .row .card .item .content{
+    background-color: #ff305b80;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    transform: scale(0);
+    border-radius: 100%;
+    transition-duration: 1s;
+}
+#Portfolio .container .row .card .item .content h3{
+    position: absolute;
+    background-color: var(--firstColor);
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    left: 100%;
+    font-size: 20px;
+}
+#Portfolio .container .row .card .item .content a{
+    position: absolute;
+    bottom: -30%;
+    left: 50%;
+    transform: translate(-50%);
+    color: var(--firstColor);
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+#Portfolio .container .row .card .item:hover .content{
+    transform: scale(1);
+    border-radius: 0;
+}
+#Portfolio .container .row .card .item:hover .content h3{
+    left: 0;
+    transition-duration: 1s;
+    transition-delay: 1s;
+}
+#Portfolio .container .row .card .item:hover .content a{
+    bottom: 10%;
+    transition-duration: 1s;
+    transition-delay: 1s;
+}
+
+/* -------BLOG SECTION------- */
+
+#Blog .container .row{
+    display: flex;
+    flex-wrap: wrap;
+}
+#Blog .container .row .card{
+    flex-basis: calc(100%/3);
+}
+#Blog .container .row .card .item{
+    border: 2px solid var(--firstColor);
+    border-radius: 10px;
+    margin: 0 15px;
+}
+#Blog .container .row .card .item .head img{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+}
+#Blog .container .row .card .item .head iframe{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+}
+#Blog .container .row .card .item .content{
+    padding: 20px;
+}
+#Blog .container .row .card .item .content h3{
+    margin-block: 15px;
+}
+#Blog .container .row .card .item .content p{
+    line-height: 25px;
+}
+#Blog .container .row .card .item .content a{
+    text-decoration: none;
+    color: var(--firstColor);
+    border: 1px solid var(--firstColor);
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px 15px;
+    display: inline-block;
+    font-size: 14px;
+    transition-duration: .5s;
+
+}
+#Blog .container .row .card .item .content a:hover{
+    color: #fff;
+    background-color: var(--firstColor);
+}
+#Blog .container .row .card .item .content a i{
+    transition-duration: .5s;
+}
+#Blog .container .row .card .item .content a:hover i{
+    margin-left: 5px;
+}
+
+/* -------CONTACT SECTION------- */
+
+#Contact .container form .row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    margin: auto;
+}
+#Contact .container form .row .card{
+    margin-bottom: 15px;
+}
+#Contact .container form .row .card:nth-of-type(1),
+#Contact .container form .row .card:nth-of-type(2){
+    flex-basis: 50% ;
+}
+#Contact .container form .row .card:nth-of-type(3),
+#Contact .container form .row .card:nth-of-type(4){
+    flex-basis: 100%;
+}
+#Contact .container form .row .card:nth-of-type(1) .item{
+    margin-right: 10px;
+}
+#Contact .container form .row .card .item .input{
+    padding: 10px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid var(--firstColor);
+    border-radius: 10px;
+}
+#Contact .container form .row .card:nth-of-type(1) .item .input,
+#Contact .container form .row .card:nth-of-type(2) .item .input{
+    width: 100%;
+}
+#Contact .container form .row .card:nth-of-type(3) .item .input,
+#Contact .container form .row .card:nth-of-type(4) .item .input{
+    width: 100%;
+}
+#Contact .container form .row .card:nth-of-type(4) .item .input{
+    resize: none;
+    height: 170px;
+}
+#Contact .container form .row .card .item .input::placeholder{
+    color: #fff;
+}
+#Contact .container form .row .card .item .input:focus{
+    outline: none;
+}
+#Contact .container form .row button{
+    background-color: transparent;
+    color: var(--firstColor);
+    border: 1px solid var(--firstColor);
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition-duration: .5s;
+}
+#Contact .container form .row button:hover{
+    background-color: var(--firstColor);
+    color: #fff;
+}
+
+/* -------FOOTER------- */
+
+footer {
+    background-color: #333;
+    text-align: center;
+    padding: 10px 0;
 }
 
